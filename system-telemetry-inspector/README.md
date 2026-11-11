@@ -10,3 +10,6 @@ sdk_version: "4.44.0"
 app_file: app.py
 pinned: false
 ---
+
+# System Telemetry Inspector
+A minimalist real-time system telemetry and resource monitor.
