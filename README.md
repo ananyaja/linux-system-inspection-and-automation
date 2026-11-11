@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # 🐧 Linux Command Line & Server Inspection Basics (Day 01)
 
@@ -36,3 +37,20 @@ Welcome to **Day 01** of the technical self-study series! Today focuses on maste
 ## 🚀 How to Run
 1. Open the `.ipynb` file in **[Google Colab](https://colab.research.google.com/)**.
 2. Run the cells sequentially to observe real-time resource allocation, monitor system memory, and practice safe process management.
+=======
+---
+title: System Telemetry Inspector
+emoji: 😻
+colorFrom: yellow
+colorTo: blue
+sdk: gradio
+sdk_version: 6.31.0
+python_version: '3.12'
+app_file: app.py
+pinned: false
+license: mit
+short_description: A minimalist real-time system telemetry and resource monitor
+---
+
+Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+>>>>>>> b5b3a51b4d9efc3fde19feacfdcffed0243706bf
