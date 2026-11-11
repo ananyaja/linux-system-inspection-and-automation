@@ -1,5 +1,4 @@
 YAML
-
 ---
 title: System Telemetry Inspector
 emoji: 📊
