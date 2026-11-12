@@ -1,48 +1,8 @@
-<<<<<<< HEAD
-
-# 🐧 Linux Command Line & Server Inspection Basics (Day 01)
-
-Welcome to **Day 01** of the technical self-study series! Today focuses on mastering core Linux terminal commands used to monitor system resources, check disk space, inspect memory, and manage interactive processes on a cloud virtual machine (Google Colab / Ubuntu).
-
----
-
-## 🛠️ Core Topics & Commands Covered
-
-### 1. System Resource & Disk Monitoring (`df` & `du`)
-* **`df -h`**: Reports free and used disk space on mounted file systems in a human-readable format (`-h` converts raw bytes to GB/MB).
-* **`df -T`**: Displays file system types (e.g., `ext4`, `tmpfs`, `overlay`) in a dedicated column.
-* **`df -i`**: Inspects inode usage (number of files/directories) instead of storage blocks.
-* **`df -t` / `df -x`**: Filter outputs to include or exclude specific file system types.
-* **`du -sh`**: Measures the total size of specific directories and files recursively.
-
-### 2. Memory & Process Inspection (`free`, `top`, & `htop`)
-* **`free -h`**: Displays total, used, free, and available physical RAM and swap space.
-* **`top`**: Real-time terminal utility to view system loads, CPU percentages (`%CPU`), and RAM consumption (`%MEM`).
-* **`htop`**: An enhanced interactive, color-coded process viewer.
-* **`ps aux --sort=-%mem`**: Lists processes sorted by highest memory usage in a clean text format.
-
-### 3. Process Management & Safety (`kill` & Mount Points)
-* **`kill -15 <PID>`**: Sends a graceful termination signal (`SIGTERM`) allowing processes to close safely.
-* **`kill -9 <PID>`**: Force-kills unresponsive processes (`SIGKILL`).
-* **Mount Point Inspection**: Using `df -h`, `mount`, and `/proc/mounts` to verify active storage attachments (like Google Drive via FUSE).
-
----
-
-## 📂 Repository Structure
-* `day01_linux_inspection.ipynb`: Complete Google Colab notebook containing executable code blocks, live outputs, and detailed markdown notes for every command.
-* `README.md`: Documentation and guide for Day 01.
-
----
-
-## 🚀 How to Run
-1. Open the `.ipynb` file in **[Google Colab](https://colab.research.google.com/)**.
-2. Run the cells sequentially to observe real-time resource allocation, monitor system memory, and practice safe process management.
-=======
 ---
 title: System Telemetry Inspector
-emoji: 😻
-colorFrom: yellow
-colorTo: blue
+emoji: 📊
+colorFrom: blue
+colorTo: green
 sdk: gradio
 sdk_version: 6.31.0
 python_version: '3.12'
@@ -52,5 +12,46 @@ license: mit
 short_description: A minimalist real-time system telemetry and resource monitor
 ---
 
-Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
->>>>>>> b5b3a51b4d9efc3fde19feacfdcffed0243706bf
+# 🐧 Linux System Telemetry & Automation Inspector
+
+Welcome to the **System Telemetry Inspector** repository! This project serves as a comprehensive technical self-study workspace and cloud utility suite covering Linux terminal operations, system monitoring, process management, and live log inspection via Gradio.
+
+---
+
+## 📂 Repository Structure & Directory Tree
+
+```text
+system-telemetry-inspector/
+├── app.py                                              # Gradio web application entry point (Hugging Face Spaces)
+├── requirements.txt                                    # Python package dependencies
+├── README.md                                           # Repository documentation & Hugging Face configuration
+├── LICENSE                                             # MIT open-source license
+├── .gitignore                                          # Git ignore rules
+├── day09_code/                                         # Supplemental scripts and logs for Day 09
+├── day01_linux_file_and_text_inspection.ipynb         # Day 01: Linux file and text inspection notebooks
+├── day02_server_and_process_inspection.ipynb          # Day 02: Server and process monitoring
+├── day03_network_and_connectivity_checks.ipynb        # Day 03: Network and socket checks
+├── day04_system_security_and_log_auditing.ipynb       # Day 04: Security and log auditing
+├── day05_disk_performance_and_io_monitoring.ipynb     # Day 05: Disk space, inodes, and I/O
+├── day06_memory_and_swap_management.ipynb           # Day 06: RAM and swap allocation
+├── day07_cpu_performance_and_load_averages.ipynb      # Day 07: CPU loads and core tracking
+├── day08_automated_system_health_checks.ipynb       # Day 08: Automated health check scripting
+└── day09_python__system_automator.ipynb               # Day 09: System telemetry and log parser app
+```
+
+---
+
+## 🚀 How to Run Locally
+
+1. Clone the repository and navigate to the project root.
+2. Install dependencies:
+
+  ```bash
+  pip install -r requirements.txt
+  ```
+
+3. Run the Gradio application:
+  ```Bash
+  python app.py
+  ```
+  
